@@ -9,5 +9,6 @@ module.exports = function(err, req, res, next) {
     //verbose
     //debug
     //silly
-    res.status(500).send('Something failed!')
+    res.status(500).send('Something failed!');
+    next();
 }
